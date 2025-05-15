@@ -1,0 +1,122 @@
+:root {
+  --darkblue: #071f39;
+  --white: #ccd4dd;
+  --mainblue: #0e166c;
+  --bbblue: #1e2987;
+  --black: #000005;
+  --redsave: #a30000;
+  --blue3: #1b29be;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--darkblue);
+}
+.container {
+  display: flex;
+  max-width: 900px;
+  margin: 30px auto;
+  background: var(--bbblue);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.sidebar {
+  width: 40%;
+  background-color: var(--mainblue);
+  color: white;
+  padding: 20px;
+}
+.sidebar img {
+  width: 300px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.sidebar h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.sidebar p,
+.sidebar li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.sidebar ul {
+  padding-left: 15px;
+}
+.sidebar button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: white;
+  color: #15324C;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  border-radius: 4px;
+}
+.main {
+  width: 70%;
+  padding: 25px;
+}
+.main h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #ffffff;
+}
+.main h1 span {
+  font-weight: normal;
+  color: var(--white);
+}
+.main p {
+  font-size: 14px;
+  color: #ffffff;
+}
+.main h2 {
+  font-size: 16px;
+  color: var(--white);
+  margin-top: 25px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.item {
+  margin-bottom: 15px;
+}
+.reference {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.reference div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: var(--white);
+  flex-direction: column;
+
+}
+.sidebar p,
+.sidebar li,
+.reference div {
+    cursor: pointer; 
+}
+
+.container .buttons, .buttons {
+  color: rgb(3, 207, 214);
+  background-color: black;
+  border-radius: 5px;
+}
+
+.savebutton{
+  color: white;
+  background-color: var(--redsave);
+  border-radius: 50px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+}
